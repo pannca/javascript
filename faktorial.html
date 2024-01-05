@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Inisialisasi variabel result dengan nilai 1
+        let result = 1;
+
+        // Loop for untuk mengalikan semua bilangan bulat positif dari 2 hingga 5
+        for (let i = 2; i <= 5; i++) {
+            result *= i;8
+        }
+
+        // Menampilkan hasil faktorial pada konsol
+        document.write("<div class='result'>Faktorial (for): " + result + "</div>");
+
+        let resultWhile = 1;
+        let counterWhile = 2;
+
+        while (counterWhile <= 5) {
+            resultWhile *= counterWhile;
+            counterWhile++;
+        }
+
+        document.write("<div class='result'>Faktorial (while): " + resultWhile + "</div>");
+
+        let resultDoWhile = 1;
+        let counterDoWhile = 2;
+
+        do {
+            resultDoWhile *= counterDoWhile;
+            counterDoWhile++;
+        } while (counterDoWhile <= 5);
+
+        document.write("<div class='result'>Faktorial (do-while): " + resultDoWhile + "</div>");
+    </script>
+</body>
+</html>
